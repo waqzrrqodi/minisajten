@@ -1,24 +1,84 @@
-body, html {
-    font-family: museo-sans, sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+/* Add some basic styling */
+  body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2em;
     margin: 0;
-    padding: 0;
-    -webkit-transition: color, background-color, fill 1s ease;
-    -moz-transition: color, background-color, fill 1s ease;
-    transition: color, background-color, fill 1s ease;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .Header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .Header__logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+  }
+  .Header__logo:hover {
+    color: #000000;
+  }
+  .Header__list {
+    display: flex;
+    gap: 41px;
+    flex: 1;
+  }
+  .Header__button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 50%;
+  }
+  /* List in header */
+ul {
+  display: flex;
+  flex-direction: row;
 }
-a {
-    color: inherit;
-    text-decoration: none;
+
+li {
+  list-style: none;
+  margin: 1rem;
 }
-img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+
+li > a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
 }
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+
+/* Header animation */
+
+li::after {
+  content: '';
+  width: 0rem;
+  height: 0.15rem;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+  width: 2rem;
 }
