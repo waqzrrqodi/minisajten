@@ -14,4 +14,4 @@ https://wireframe.cc/pJqaUp
 https://parrotlinux.org/
 
 ### Site Content
-It shall be aboot ze supercomputers and quantumcomputers.
+It shall be aboot ze supercomputers and quantumcomputers. It's amazing work I promise.
