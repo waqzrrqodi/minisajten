@@ -8,16 +8,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
   }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-    position: relative; /* add a position value */
-  }
   
   .logo {
     margin-left: 20px;
@@ -58,6 +48,20 @@ ul.show {
   .menu-icon {
   display: block;
   }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10vh;
+    background-color: #333;
+    color: #fff;
+    position: relative; 
+  }
+  .nav-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   }
   
   @media screen and (min-width: 601px) {
@@ -70,6 +74,18 @@ ul.show {
   
   .menu-icon {
   display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* add a position value */
+  }
+  .nav-mobile {
+    display: none;
   }
   }
   
@@ -107,3 +123,65 @@ ul.show {
   text-align: center;
   padding: 20px;
   }
+
+.wrapper {
+  margin: 80px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.button {
+  padding: 15px 100px;
+  margin: 10px 4px;
+  color: rgb(194, 194, 194);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.button {
+  border: 10px solid transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #003177;
+  box-shadow: inset 0px 0px 0px #b6cdef;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+.button:hover::before {
+  width: 100%;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #a9c1e8;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+}
+.button:hover::after {
+  width: 100%;
+}
+.button:hover {
+  border-left: 1px solid #b6cdef;
+  border-right: 1px solid #6098ff;
+}
+.left {
+  width: calc(25% - 20px);
+  align-items: flex-start;
+}
