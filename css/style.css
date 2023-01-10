@@ -1,84 +1,187 @@
-/* Add some basic styling */
-  body {
-    font-family: sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1 {
-    font-size: 2em;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap%22");
+
+body {
+    background-image: url('img/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
   }
-  h2 {
-    font-size: 1.5em;
-    margin: 0;
+  
+  .logo {
+    margin-left: 20px;
+    font-size: 20px;
   }
-  h3 {
-    font-size: 1.2em;
-    margin: 0;
+  
+  ul {
+    display: none; /* hide the menu by default */
   }
-  .Header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  .Header__logo {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #000000;
-  }
-  .Header__logo:hover {
-    color: #000000;
-  }
-  .Header__list {
-    display: flex;
-    gap: 41px;
-    flex: 1;
-  }
-  .Header__button {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.2rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
+  
+  /* add a hamburger icon */
+  .menu-icon {
+    display: none; /* hide the hamburger icon by default */
+    position: absolute; /* position the icon */
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     cursor: pointer;
-    margin-left: 50%;
   }
-  /* List in header */
-ul {
-  display: flex;
-  flex-direction: row;
-}
+  
+  .menu-icon i {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* show the hamburger icon and hide the menu */
+   
+  
+  ul {
+  display: none;
+  }
 
-li {
-  list-style: none;
-  margin: 1rem;
-}
-
-li > a{
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #000000;
-}
-
-/* Header animation */
-
-li::after {
-  content: '';
-  width: 0rem;
-  height: 0.15rem;
-  background-color: rgb(0, 0, 0);
+ul.show {
+    display: block;
+    }
+  
+  .menu-icon {
   display: block;
-  border-radius: 0.2rem;
-  margin: 0.2rem auto 0 auto;
-  transition: all 0.3s ease-in-out;
-}
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10vh;
+    background-color: #333;
+    color: #fff;
+    position: relative; 
+  }
+  .nav-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+  
+  @media screen and (min-width: 601px) {
+  /* show the menu and hide the hamburger icon */
+  ul {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  }
+  
+  .menu-icon {
+  display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* add a position value */
+  }
+  .nav-mobile {
+    display: none;
+  }
+  }
+  
+  li {
+  margin: 0 10px;
+  }
+  
+  a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  }
+  
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  .box {
+  width: calc(50% - 20px);
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  }
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  }
 
-li:hover::after {
-  width: 2rem;
+.wrapper {
+  margin: 80px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.button {
+  padding: 15px 100px;
+  margin: 10px 4px;
+  color: rgb(194, 194, 194);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.button {
+  border: 10px solid transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #003177;
+  box-shadow: inset 0px 0px 0px #b6cdef;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+.button:hover::before {
+  width: 100%;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: #a9c1e8;
+  -webkit-transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+}
+.button:hover::after {
+  width: 100%;
+}
+.button:hover {
+  border-left: 1px solid #b6cdef;
+  border-right: 1px solid #6098ff;
+}
+.left {
+  width: calc(25% - 20px);
+  align-items: flex-start;
 }

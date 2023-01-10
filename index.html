@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>QuantumSurge</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6099108a63.js" crossorigin="anonymous"></script>
+    <title>Minisajten ze best</title>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menu = document.querySelector('ul');
+
+        menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        });
+    </script>
 </head>
 <body>
-  <header>
-    <div class="Header">
-      <div class="Header__logo">
-        <img src="img/logo.png" alt="logo">
+    <nav>
+      <div class="logo">QuantumSurge</div>
+      <ul>
+        <li><a href="#">Placeholder</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <ul>
+        <div class="wrapper">
+        <li><a href="donate.html" class="button">Donate</a></li>
+        </div>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa fa-bars"></i>
       </div>
-      <div class="Header__menu">
-        <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
+      <div class="nav-mobile">
+        <ul class="show">
+          <li><a href="#">Placeholder</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="donate.html" class="button">Donate</a></li>
         </ul>
       </div>
-      <div class="Header__button">
-        <a href="#" class="DOWNLOAD_BUTTON">DOWNLOAD</a>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="box left">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box left">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box left">Box 5</div>
+        <div class="box">Box 6</div>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="Main">
-      <div class="Main__choices">
-        <div class="choice1">
-          <img src="img/choice1.png" alt="choice1">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      <div class="Main">
+        <div class="Main__choices">
+          <div class="choice1">
+            <img src="img/choice1.png" alt="choice1">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div class="choice2">
+            <img src="img/choice2.png" alt="choice2">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div class="choice3">
+            <img src="img/choice3.png" alt="choice3">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div class="choice4">
+            <img src="img/choice4.png" alt="choice4">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div class="choice5">
+            <img src="img/choice5.png" alt="choice5">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
         </div>
-        <div class="choice2">
-          <img src="img/choice2.png" alt="choice2">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div class="Main__content">
+          <div style="display: block;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div style="display: none;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div style="display: none;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div style="display: none;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div style="display: none;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
+          <div style="display: none;">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          </div>
         </div>
-        <div class="choice3">
-          <img src="img/choice3.png" alt="choice3">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div class="choice4">
-          <img src="img/choice4.png" alt="choice4">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div class="choice5">
-          <img src="img/choice5.png" alt="choice5">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-      </div>
-      <div class="Main__content">
-        <div style="display: block;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div style="display: none;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div style="display: none;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div style="display: none;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div style="display: none;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-        <div style="display: none;">
-          <h2>Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-      </div>
-</body>
-</html>
+    </main>
+    <footer>
+      Copyright 2021 QuantumSurge
+      <a href="https://github.com/waqzrrqodi/"><i class="fa-brands fa-github"></i></a>
+    </footer>
+  </body>
+  </html>
