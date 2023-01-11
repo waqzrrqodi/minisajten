@@ -10,8 +10,6 @@ https://wireframe.cc/NWVEue
 ### Third page
 https://wireframe.cc/pJqaUp
 ***
-### Sample Site
-https://parrotlinux.org/
 
 ### Site Content
 It shall be aboot ze supercomputers and quantumcomputers. It's amazing work I promise.
