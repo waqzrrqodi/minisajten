@@ -7,24 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6099108a63.js" crossorigin="anonymous"></script>
     <title>Minisajten ze best</title>
-    <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const menu = document.querySelector('ul');
-
-        menuIcon.addEventListener('click', () => {
-        menu.classList.toggle('show');
-        });
-    </script>
 </head>
 <body>
     <nav>
       <div class="logo">QuantumSurge</div>
-      <ul>
+      <ul class="nav-menu">
         <li><a href="#">Placeholder</a></li>
         <li><a href="facts.html">Facts</a></li>
         <li><a href="donate.html">Donate</a></li>
       </ul>
-      <ul>
+      <ul class="nav-menu">
         <div class="wrapper">
         <li><a href="donate.html" class="button">Donate</a></li>
         </div>
@@ -32,82 +24,138 @@
       <div class="menu-icon">
         <i class="fa fa-bars"></i>
       </div>
-      <div class="nav-mobile">
-        <ul class="show">
+      <div class="dropdown-content">
+        <ul class="nav-menu">
           <li><a href="#">Placeholder</a></li>
-        <li><a href="facts.html">Facts</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="donate.html" class="button">Donate</a></li>
+          <li><a href="facts.html">Facts</a></li>
+          <li><a href="donate.html">Donate</a></li>
         </ul>
       </div>
     </nav>
     <main>
-      <div class="container">
-        <div class="box left">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box left">Box 3</div>
-        <div class="box">Box 4</div>
-        <div class="box left">Box 5</div>
-        <div class="box">Box 6</div>
+      <div>
+        <div>
+          <div class="Menu__choice">
+            <ul class="Menu__choice">
+              <li><button id="toggle-first" class="margin-right">First</button></li>
+              <li><button id="toggle-second" class="margin-right">Second</button></li>
+              <li><button id="toggle-third" class="margin-right">Third</button></li>
+              <li><button id="toggle-forth" class="margin-right">Forth</button></li>
+            </ul>
+          </div>
+          <span></span>
+        </div>
       </div>
       <div class="Main">
-        <div class="Main__choices">
-          <div class="choice1">
-            <img src="img/choice1.png" alt="choice1">
-            <h3>Lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div class="choice2">
-            <img src="img/choice2.png" alt="choice2">
-            <h3>Lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div class="choice3">
-            <img src="img/choice3.png" alt="choice3">
-            <h3>Lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div class="choice4">
-            <img src="img/choice4.png" alt="choice4">
-            <h3>Lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div class="choice5">
-            <img src="img/choice5.png" alt="choice5">
-            <h3>Lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-        </div>
         <div class="Main__content">
-          <div style="display: block;">
+          <div style="display: block;" class="box" id="First">
             <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+            </p>
           </div>
-          <div style="display: none;">
+          <div style="display: none;" class="box" id="Second">
             <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur addfgdfggdfdfgipisicing elit. Quisquam, quod.
+            </p>
           </div>
-          <div style="display: none;">
+          <div style="display: none;" class="box" id="Third">
             <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>
+              Lorem ipsum dolor sit amet consegdfdfgdfgctetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, itaque aliquam. 
+              Laudantium vitae velit autem voluptate. Praesentium ipsa fugiat, dignissimos est iure nihil veritatis molestias, atque corporis vero impedit. 
+              Tempore!
+            </p>
           </div>
-          <div style="display: none;">
+          <div style="display: none;" class="box" id="Forth">
             <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div style="display: none;">
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          </div>
-          <div style="display: none;">
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
         </div>
+      </div>
     </main>
     <footer>
       Copyright 2021 QuantumSurge
       <a href="https://github.com/waqzrrqodi/"><i class="fa-brands fa-github"></i></a>
     </footer>
+    <script>
+    const toggleFirst = document.getElementById('toggle-first');
+        const toggleSecond = document.getElementById('toggle-second');
+        const toggleThird = document.getElementById('toggle-third');
+        const toggleForth = document.getElementById('toggle-forth');
+
+        const First = document.getElementById('First');
+        const Second = document.getElementById('Second');
+        const Third = document.getElementById('Third');
+        const Forth = document.getElementById('Forth');
+
+        toggleFirst.onclick = function() {
+          if (toggleFirst.style.display !== "block") {
+            First.style.display = "block";
+            Second.style.display = "none";
+            Third.style.display = "none";
+            Forth.style.display = "none";
+          }
+        }
+        toggleSecond.onclick = function() {
+          if (toggleSecond.style.display !== "block") {
+            First.style.display = "none";
+            Second.style.display = "block";
+            Third.style.display = "none";
+            Forth.style.display = "none";
+          }
+        }
+        toggleThird.onclick = function() {
+          if (toggleThird.style.display !== "block") {
+            First.style.display = "none";
+            Second.style.display = "none";
+            Third.style.display = "block";
+            Forth.style.display = "none";
+          }
+        }
+        toggleForth.onclick = function() {
+          if (toggleForth.style.display !== "block") {
+            First.style.display = "none";
+            Second.style.display = "none";
+            Third.style.display = "none";
+            Forth.style.display = "block";
+          }
+        }
+    </script>
+    <script>
+          const menuIcon = document.querySelector('.menu-icon');
+          const menu = document.querySelector('ul');
+  
+          menuIcon.addEventListener('click', () => {
+          menu.classList.toggle('open');
+          });
+    </script>
   </body>
   </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">QuantumSurge</div>
+        <ul class="nav-menu">
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="facts.html">Facts</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+        <ul class="nav-menu">
+          <div class="wrapper">
+          <li><a href="donate.html" class="button">Donate</a></li>
+          </div>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="dropdown-content">
+          <ul class="nav-menu">
+            <li><a href="#">Placeholder</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="donate-boxes">
+        <div class="side-box-container">
+            <div class="side-box">
+                Plz money
+            </div>
+            <div class="side-box">
+                Credit card
+            </div>
+            <div class="side-box">
+                Fingerprint
+            </div>
+        </div>
+        <div class="main-box-container">
+            <div class="main-box">
+                Gift card
+            </div>
+        </div>
+      </div>
+      <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menu = document.querySelector('ul');
+
+        menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        });
+  </script>
+</body>
+</html>
