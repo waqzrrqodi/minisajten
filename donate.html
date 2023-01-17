@@ -4,58 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6099108a63.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/quantum.ico" type="image/icon type">
+    
+    <title>Quantum(p)articles</title>
 </head>
 <body>
     <nav>
-        <div class="logo">QuantumSurge</div>
-        <ul class="nav-menu">
-          <li><a href="index.html">Placeholder</a></li>
-          <li><a href="facts.html">Facts</a></li>
-          <li><a href="#">Donate</a></li>
-        </ul>
-        <ul class="nav-menu">
-          <div class="wrapper">
-          <li><a href="donate.html" class="button">Donate</a></li>
-          </div>
-        </ul>
-        <div class="menu-icon">
+      <div class="logo"><a href="index.html"><h2>Quantum(p)articles</h2></a></div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Placeholder</a></li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+      <ul class="nav-menu">
+        <div class="wrapper">
+        <li><a href="#" class="button">Donate</a></li>
+        </div>
+      </ul>
+      <div class="menu-icon">
+        <button>
+          <span class="visually-hidden"></span>
           <i class="fa fa-bars"></i>
-        </div>
-        <div class="dropdown-content">
-          <ul class="nav-menu">
-            <li><a href="#">Placeholder</a></li>
-            <li><a href="facts.html">Facts</a></li>
-            <li><a href="donate.html">Donate</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="donate-boxes">
-        <div class="side-box-container">
-            <div class="side-box">
-                Plz money
-            </div>
-            <div class="side-box">
-                Credit card
-            </div>
-            <div class="side-box">
-                Fingerprint
-            </div>
-        </div>
-        <div class="main-box-container">
-            <div class="main-box">
-                Gift card
-            </div>
-        </div>
+        </button>
       </div>
-      <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const menu = document.querySelector('ul');
+    </nav>
+    <main>
+      <div class="dropdown-content active">
+        <ul class="nav-menu-dropdown">
+          <li class="nav-item-dropdown"><a href="index.html">Placeholder</a></li>
+          <li class="nav-item-dropdown"><a href="facts.html">Facts</a></li>
+          <li class="nav-item-dropdown" style="border-bottom: #fff solid 3px;"><a href="#">Donate</a></li>
+        </ul>
+      </div>
+      <div class="Main__content__donate">
+        <div class="Main__content__text">
+          <h1>Donate</h1>
+          <p>Donate to help us keep the site running and to help us expand our content.</p>
+          <p>Donations are not required, but are appreciated.</p>
+          <p>Thank you for your support!</p>
+        </div>
+        <div class="donate-boxes">
+        <div class="Main__content">
+          <div class="Main__content__donate__paypal box">
+            
+            <h2><i class="fa-solid fa-wallet"></i> PayPal</h2>
+            <p>Donate using PayPal</p>
+            <a href="https://www.paypal.com/donate?hosted_button_id=Z9Z2Z2Z2Z2Z2Z" target="_blank"><button>Donate</button></a>
+          </div>
+          <div class="Main__content__donate__patreon box">
+            <h2><i class="fa-brands fa-patreon"></i> Patreon</h2>
+            <p>Donate using Patreon</p>
+            <a href="https://www.patreon.com/quantumparticles" target="_blank"><button>Donate</button></a>
+          </div>
+          <div class="Main__content__donate_data box">
+            <h2><i class="fa-solid fa-unlock-keyhole"></i> Personal Data</h2>
+            <p>Donate using Personal Data</p>
+            <a href="" target="_blank"><button>Donate</button></a>
+          </div>
+          </div>
+          <div class="box-large">
+            <h2><i class="fa-solid fa-donate"></i> Other</h2>
+            <p>Donate using other methods</p>
+            <a href="https://www.paypal.com/donate?hosted_button_id=Z9Z2Z2Z2Z2Z2Z" target="_blank"><button>Donate</button></a>
+          </div>
+        </div>
+    </main>
+    <footer>
+      Copyright 2021 | Quantum(p)articles
+      <a href="https://github.com/waqzrrqodi/" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+    <script>
+          // Get references to the button and the dropdown content
+          const menuIconButton = document.querySelector(".menu-icon");
+          const dropdownMenu = document.querySelector(".dropdown-content");
+          let menuIsVisible = false;
 
-        menuIcon.addEventListener('click', () => {
-        menu.classList.toggle('open');
-        });
-  </script>
-</body>
-</html>
+          // Add a click event listener to the button
+          menuIconButton.addEventListener("click", () => {
+            if(!menuIsVisible){
+              dropdownMenu.style.display = "block";
+              menuIsVisible = true;
+            }else {
+              dropdownMenu.style.display = "none";
+              menuIsVisible = false;
+            }
+          });
+    </script>
+  </body>
+  </html>

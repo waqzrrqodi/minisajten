@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6099108a63.js" crossorigin="anonymous"></script>
-    <title>Minisajten ze best</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/quantum.ico" type="image/icon type">
+    
+    <title>Quantum(p)articles</title>
 </head>
 <body>
     <nav>
-      <div class="logo">QuantumSurge</div>
+      <div class="logo"><a href="index.html"><h2>Quantum(p)articles</h2></a></div>
       <ul class="nav-menu">
         <li><a href="#">Placeholder</a></li>
         <li><a href="facts.html">Facts</a></li>
@@ -39,11 +42,11 @@
       <div>
         <div>
           <div class="Menu__choice">
-            <ul class="Menu__choice">
-              <li><button id="toggle-first" class="margin-right">First</button></li>
-              <li><button id="toggle-second" class="margin-right">Second</button></li>
-              <li><button id="toggle-third" class="margin-right">Third</button></li>
-              <li><button id="toggle-forth" class="margin-right">Forth</button></li>
+            <ul class="Menu__choice__list">
+              <li><button id="toggle-first" class="margin-right quantum-buttons">Quantum Computers</button></li>
+              <li><button id="toggle-second" class="margin-right quantum-buttons">IMB's Osprey</button></li>
+              <li><button id="toggle-third" class="margin-right quantum-buttons">Xanadu’s Borealis</button></li>
+              <li><button id="toggle-forth" class="margin-right quantum-buttons">Google's Sycamore</button></li>
             </ul>
           </div>
           <span></span>
@@ -52,118 +55,143 @@
       <div class="Main">
         <div class="Main__content">
           <div style="display: block;" class="box" id="First">
-            <h2>Lorem</h2>
+            <h2 style="border-bottom: #fff solid 3px; display: flex; justify-content: center;">Info about Quantum Computers</h2>
+            <div class="text-image">
+              <div class="text">
+                <h3>What are Quantum Computers?</h3>
+                <h5>Click on one of the buttons above to see some of the best quantum computers to date :)</h5>
             <p>
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
-              Lorem fggfddfgdfgipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Tempore iusto porro dignissimos soluta minus iure asperiores ex enim optio? Reprehenderit, iste. Ad et cupiditate repellendus ab neque atque non natus.
+              Quantum computers are a type of computer that use quantum-mechanical phenomena, such as superposition and entanglement, to perform operations on data. 
+              They are different from traditional computers, which use classical physics to process information. 
+              The basic unit of quantum information is the qubit, which can exist in a state of superposition, meaning it can represent a 0 and a 1 simultaneously. 
+              This allows quantum computers to perform certain types of calculations much faster than traditional computers.
             </p>
+            <p>
+              Quantum algorithms are designed to take advantage of the properties of qubits and quantum gates, which are the basic building blocks of quantum circuits. 
+              These algorithms can be used for a variety of tasks, such as factoring large numbers, searching unsorted databases, and simulating quantum systems. 
+              One of the most famous quantum algorithms is Shor's algorithm, which can be used to factor large numbers exponentially faster than the best known classical algorithms.
+            </p>
+            <p>
+              To perform quantum computation, a physical system is used to implement the qubits, the quantum gates and the measurement process. 
+              Many different physical systems can be used to implement qubits, such as superconducting circuits, trapped ions, and topological qubits. 
+              Each physical system has its own advantages and disadvantages, and research is ongoing to find the best qubit technology for building a large-scale, practical quantum computer.
+            </p>
+            <p>
+              However, the development of full-scale quantum computers is still in its infancy and there are still many challenges that need to be overcome. 
+              One of the main challenges is the problem of decoherence, which occurs when the qubits interact with their environment and lose their quantum properties. 
+              This can cause errors in the computation and limit the performance of the quantum computer.
+            </p>
+            <p>
+              Despite these challenges, quantum computers have the potential to revolutionize many fields, including cryptography, drug discovery, and artificial intelligence. 
+              Many companies and research institutions are investing heavily in quantum computing research and development, with the goal of creating a practical, large-scale quantum computer in the near future.
+            </p>
+            <hr>
+            </div>
             <img src="img/DALL·E 2023-01-12 14.20.43 - super computer in a dark room with green ambient lights, digital art.png" alt="Super computer" class="images">
+            </div>
           </div>
           <div style="display: none;" class="box" id="Second">
-            <h2>Lorem</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur addfgdfggdfdfgipisicing elit. Quisquam, quod.
-            </p>
-          </div>
+            <h2>IBM's Osprey</h2>
+            <div class="quantum-computers-info">
+              <img src="img/IBM-Osprey.png" alt="IBM's Osprey quantum computer" class="image">
+              <hr>
+              <div class="vl"></div>
+              <div class="text">
+                <p>IBM's Osprey: This is the most powerful quantum computer to date with a massive 433 qubits. With the power of 433 qubits, IBM’s Osprey is the most advanced quantum processor in the world by a large margin. It packs twice as many qubits as the previous record-holder – Xanadu’s Borealis</p>
+              </div>
+            </div>
+            </div>
           <div style="display: none;" class="box" id="Third">
-            <h2>Lorem</h2>
-            <p>
-              Lorem ipsum dolor sit amet consegdfdfgdfgctetur adipisicing elit. Quisquam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, itaque aliquam. 
-              Laudantium vitae velit autem voluptate. Praesentium ipsa fugiat, dignissimos est iure nihil veritatis molestias, atque corporis vero impedit. 
-              Tempore!
-            </p>
-          </div>
+            <h2>Xanadu's Borealis</h2>
+            <div class="quantum-computers-info">
+                <img src="img/Xanadu-Borealis.png" alt="Xanadu’s Borealis quantum computer" class="image">
+              <hr>
+              <div class="vl"></div>
+              <div class="text">
+                <p>Xanadu's Borealis: Borealis is the world's first photonic quantum computer offering full programmability over all of its gates and capable of quantum computational advantage with a whopping 216 qubits. It's developed in Ontario, Canada and it has a large potential in the future for reseach and development.</p>
+              </div>
+            </div>
+            </div>
           <div style="display: none;" class="box" id="Forth">
-            <h2>Lorem</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquagfdgfdfgm, quod. lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <h2>Google's Sycamore</h2>
+            <div class="quantum-computers-info">
+                <img src="img/Google-Sycamore.png" alt="Google's Sycamore quantum computer" class="image">
+              <hr>
+              <div class="vl"></div>
+              <div class="text">
+                <p>Google's Sycamore: This 53-qubit quantum computer, announced in 2019, is considered to be the first quantum computer to achieve quantum supremacy, meaning it was able to perform a calculation that is impossible for classical computers to complete in a reasonable amount of time.</p>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      Copyright 2021 QuantumSurge
-      <a href="https://github.com/waqzrrqodi/"><i class="fa-brands fa-github"></i></a>
+      Copyright 2021 | Quantum(p)articles
+      <a href="https://github.com/waqzrrqodi/" target="_blank"><i class="fa-brands fa-github"></i></a>
     </footer>
     <script>
-    const toggleFirst = document.getElementById('toggle-first');
-        const toggleSecond = document.getElementById('toggle-second');
-        const toggleThird = document.getElementById('toggle-third');
-        const toggleForth = document.getElementById('toggle-forth');
-
-        const First = document.getElementById('First');
-        const Second = document.getElementById('Second');
-        const Third = document.getElementById('Third');
-        const Forth = document.getElementById('Forth');
-
-        toggleFirst.onclick = function() {
-          if (toggleFirst.style.display !== "block") {
-            First.style.display = "block";
-            Second.style.display = "none";
-            Third.style.display = "none";
-            Forth.style.display = "none";
-          }
-        }
-        toggleSecond.onclick = function() {
-          if (toggleSecond.style.display !== "block") {
-            First.style.display = "none";
-            Second.style.display = "block";
-            Third.style.display = "none";
-            Forth.style.display = "none";
-          }
-        }
-        toggleThird.onclick = function() {
-          if (toggleThird.style.display !== "block") {
-            First.style.display = "none";
-            Second.style.display = "none";
-            Third.style.display = "block";
-            Forth.style.display = "none";
-          }
-        }
-        toggleForth.onclick = function() {
-          if (toggleForth.style.display !== "block") {
-            First.style.display = "none";
-            Second.style.display = "none";
-            Third.style.display = "none";
-            Forth.style.display = "block";
-          }
-        }
-    </script>
-    <script>
           // Get references to the button and the dropdown content
-          const button = document.querySelector('.menu-icon button');
-          const dropdown = document.querySelector('.dropdown-content');
+          const menuIconButton = document.querySelector(".menu-icon");
+          const dropdownMenu = document.querySelector(".dropdown-content");
+          let menuIsVisible = false;
 
           // Add a click event listener to the button
-          button.addEventListener('click', () => {
-          // Toggle the 'active' class on the dropdown content
-          dropdown.classList.toggle('active');
+          menuIconButton.addEventListener("click", () => {
+            if(!menuIsVisible){
+              dropdownMenu.style.display = "block";
+              menuIsVisible = true;
+            }else {
+              dropdownMenu.style.display = "none";
+              menuIsVisible = false;
+            }
           });
-
+    </script>
+    <script>
+      $(function() {
+    $('#toggle-first').click(function() {
+        if ($('#First').hasClass('hidden')) {
+            $('#First').removeClass('hidden').fadeIn(1000);
+            $('#Second').addClass('hidden').fadeOut(0);
+            $('#Third').addClass('hidden').fadeOut(0);
+            $('#Forth').addClass('hidden').fadeOut(0);
+        }
+    });
+});
+$(function() {
+    $('#Second').addClass('hidden').hide();
+    $('#toggle-second').click(function() {
+        if ($('#Second').hasClass('hidden')) {
+            $('#Second').removeClass('hidden').fadeIn(1000);
+            $('#First').addClass('hidden').fadeOut(0);
+            $('#Third').addClass('hidden').fadeOut(0);
+            $('#Forth').addClass('hidden').fadeOut(0);
+        }
+    });
+});
+$(function() {
+    $('#Third').addClass('hidden').hide();
+    $('#toggle-third').click(function() {
+        if ($('#Third').hasClass('hidden')) {
+            $('#Third').removeClass('hidden').fadeIn(1000);
+            $('#First').addClass('hidden').fadeOut(0);
+            $('#Second').addClass('hidden').fadeOut(0);
+            $('#Forth').addClass('hidden').fadeOut(0);
+        }
+    });
+});
+$(function() {
+    $('#Forth').addClass('hidden').hide();
+    $('#toggle-forth').click(function() {
+        if ($('#Forth').hasClass('hidden')) {
+            $('#Forth').removeClass('hidden').fadeIn(1000);
+            $('#First').addClass('hidden').fadeOut(0);
+            $('#Second').addClass('hidden').fadeOut(0);
+            $('#Third').addClass('hidden').fadeOut(0);
+        }
+    });
+});
     </script>
   </body>
   </html>

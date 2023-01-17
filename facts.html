@@ -1,19 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6099108a63.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/quantum.ico" type="image/icon type">
+    
+    <title>Quantum(p)articles</title>
+</head>
 <body>
-    <div id="first">This is the FIRST div</div>
-    <div id="second">This is the SECOND div</div>
-    <div id="third">This is the THIRD div</div>
-    <button id="toggle">Hide THIRD div</button>
-  
+    <nav>
+      <div class="logo"><a href="index.html"><h2>Quantum(p)articles</h2></a></div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Placeholder</a></li>
+        <li><a href="#">Facts</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <ul class="nav-menu">
+        <div class="wrapper">
+        <li><a href="donate.html" class="button">Donate</a></li>
+        </div>
+      </ul>
+      <div class="menu-icon">
+        <button>
+          <span class="visually-hidden"></span>
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="dropdown-content active">
+        <ul class="nav-menu-dropdown">
+          <li class="nav-item-dropdown"><a href="#">Placeholder</a></li>
+          <li class="nav-item-dropdown"><a href="facts.html">Facts</a></li>
+          <li class="nav-item-dropdown" style="border-bottom: #fff solid 3px;"><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="Main__content">
+        <div>
+          <h1>Quantum(p)articles</h1>
+          <p>Quantum(p)articles is a website dedicated to the study of quantum physics and quantum mechanics. We aim to provide a platform for the dissemination of information about quantum physics and quantum mechanics.</p>
+        </div>
+        <hr>
+        <div>
+          <h2 style="border-bottom: #fff 2px solid;">What is quantum computers?</h2>
+          <p>A quantum computer uses quantum bits, or qubits, instead of classical bits to store and process information. Unlike classical bits, which can be in one of two states (0 or 1), qubits can exist in multiple states at once, known as superposition. Additionally, qubits can become "entangled" with other qubits, meaning that the state of one qubit is dependent on the state of another, even if they are separated by large distances.
+
+            These properties of qubits allow quantum computers to perform certain types of calculations much faster than classical computers. For example, a quantum computer can factor large numbers exponentially faster than a classical computer, which could have significant implications for encryption and cryptography.
+            
+            To build a quantum computer, scientists use a variety of physical systems as qubits, including atoms, ions, superconducting circuits, and more. Once qubits are created, they need to be controlled and manipulated by applying electromagnetic fields, laser light, and other techniques.
+            
+            To perform a calculation, a series of quantum gates, which are the equivalent of classical logic gates, are applied to the qubits. The output of a quantum computation is read out by measuring the state of the qubits.
+            
+            Due to the nature of quantum mechanics, a quantum computation is probabilistic and the outcome of a single run of the algorithm is generally not deterministic. To increase the accuracy of results, the computation is repeated multiple times, and the statistics of the results are analyzed.
+            
+            It's important to note that while quantum computers have the potential to be much faster than classical computers for certain types of problems, they still have a ways to go before they will be able to replace classical computers in all cases. Additionally, they are still very expensive and difficult to build and maintain.</p>
+        </div>
+        <div class="form">
+          
+          <form onsubmit="alert('Thank you for submitting your fact about quantum computers!');">
+            <h2>Submit a fact:</h2>
+            <label for="fact">Enter a fact about quantum computers:</label>
+            <input type="text" id="fact" name="fact">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+    </main>
+    <footer>
+      Copyright 2021 | Quantum(p)articles
+      <a href="https://github.com/waqzrrqodi/" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
     <script>
-      const targetDiv = document.getElementById("third");
-      const btn = document.getElementById("toggle");
-      btn.onclick = function () {
-        if (targetDiv.style.display !== "none") {
-          targetDiv.style.display = "none";
-        } else {
-          targetDiv.style.display = "block";
-        }
-      };
+          // Get references to the button and the dropdown content
+          const menuIconButton = document.querySelector(".menu-icon");
+          const dropdownMenu = document.querySelector(".dropdown-content");
+          let menuIsVisible = false;
+
+          // Add a click event listener to the button
+          menuIconButton.addEventListener("click", () => {
+            if(!menuIsVisible){
+              dropdownMenu.style.display = "block";
+              menuIsVisible = true;
+            }else {
+              dropdownMenu.style.display = "none";
+              menuIsVisible = false;
+            }
+          });
     </script>
   </body>
-  
+  </html>
