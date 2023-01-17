@@ -179,7 +179,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 75%;
+  width: 90%;
   height: 100%;
 }
 
@@ -240,4 +240,15 @@ body {
 
 .main-box-container {
   width: 60%;
+}
+
+.images {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5%;
+  border-radius: 10px;
+  border: #fff 5px solid;
 }
