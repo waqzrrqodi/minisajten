@@ -87,6 +87,11 @@ body {
     transition: height 0.5s ease;
   }
   .dropdown-content.active {
+    display: none;
+    height: 0;
+    transition: height 1s ease-in-out;
+  }
+  .dropdown-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +99,6 @@ body {
     width: auto;
     background-color: #181949;
     z-index: 1;
-  }
-  .dropdown-content{
-    display: none;
   }
   .Menu__choice {
     display: flex;
