@@ -27,15 +27,15 @@
           <i class="fa fa-bars"></i>
         </button>
       </div>
-      <div class="dropdown-content navbar-collapse">
-        <ul class="nav-menu">
-          <li class="nav-item dropdown"><a href="#">Placeholder</a></li>
-          <li class="nav-item dropdown"><a href="facts.html">Facts</a></li>
-          <li class="nav-item dropdown"><a href="donate.html">Donate</a></li>
-        </ul>
-      </div>
     </nav>
     <main>
+      <div class="dropdown-content active">
+        <ul class="nav-menu-dropdown">
+          <li class="nav-item-dropdown"><a href="#">Placeholder</a></li>
+          <li class="nav-item-dropdown"><a href="facts.html">Facts</a></li>
+          <li class="nav-item-dropdown" style="border-bottom: #fff solid 3px;"><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
       <div>
         <div>
           <div class="Menu__choice">
@@ -154,12 +154,16 @@
         }
     </script>
     <script>
-          const menuIcon = document.querySelector('.menu-icon');
-          const menu = document.querySelector('.menu__list');
-  
-          menuIcon.addEventListener('click', () => {
-          menu.classList.toggle('open');
+          // Get references to the button and the dropdown content
+          const button = document.querySelector('.menu-icon button');
+          const dropdown = document.querySelector('.dropdown-content');
+
+          // Add a click event listener to the button
+          button.addEventListener('click', () => {
+          // Toggle the 'active' class on the dropdown content
+          dropdown.classList.toggle('active');
           });
+
     </script>
   </body>
   </html>
